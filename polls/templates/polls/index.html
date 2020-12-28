@@ -29,73 +29,51 @@
             <div class="card">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
-
                 <p class="card-text">
                   Some quick example text to build on the card title and make up the bulk of the card's
                   content.
                 </p>
-
                 <a href="#" class="card-link">Card link</a>
                 <a href="#" class="card-link">Another link</a>
                 <div id="like_button_container"></div>
+                <div id="like_button_container2"></div>
               </div>
             </div>
+          </div>
 
-            <div class="card card-primary card-outline">
+          <div class="col-lg-6">
+            <div class="card">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
-
                 <p class="card-text">
                   Some quick example text to build on the card title and make up the bulk of the card's
                   content.
                 </p>
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
-              </div>
-            </div><!-- /.card -->
-
-            <!-- general form elements disabled -->
-            <div class="card card-primary card-outline">
-              <div class="card-header">
-                <h3 class="card-title">General Elements</h3>
-              </div>
-              <!-- /.card-header -->
-              <div class="card-body">
-                {% include 'advanced_forms/general_elements_form.html' %}
-              </div>
-              <!-- /.card-body -->
-            </div>
-            <!-- /.card -->
-          </div>
-          <!-- /.col-md-6 -->
-          <div class="col-lg-6">
-            <div class="card">
-              <div class="card-header">
-                <h5 class="m-0">Featured</h5>
-              </div>
-              <div class="card-body">
-                <h6 class="card-title">Special title treatment</h6>
-
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-
-            <div class="card card-primary card-outline">
-              <div class="card-header">
-                <h5 class="m-0">Featured</h5>
-              </div>
-              <div class="card-body">
-                <h6 class="card-title">Special title treatment</h6>
-
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
+                <div id="registration_form"></div>
+{#                <form id="registration_form1" class="form" method="get" action="">#}
+{#                  {{ form.non_field_errors }}#}
+{#                  <div class="row">#}
+{#                    {% for each in form %}#}
+{#                      <div class="col-lg-3 col-md-3">#}
+{#                        <div class="form-group">#}
+{#                          <em class="text-red">{{ each.errors }}</em>#}
+{#                          <label for="{{ each.id_for_label }}">{{ each.label }}</label>#}
+{#                          {% if each.help_text %}#}
+{#                            <span style="border-bottom: 1px dotted black;" data-toggle="tooltip" data-placement="top"#}
+{#                                  title="{{ each.help_text }}">Help</span>#}
+{#                          {% endif %}#}
+{#                          {{ each }}#}
+{#                        </div>#}
+{#                      </div>#}
+{#                    {% endfor %}#}
+{#                  </div>#}
+{#                  <button type="submit" class="btn btn-primary" name="action" value="search">Next</button>#}
+{#                  <button type="submit" class="btn btn-primary" name="action" value="search">Search</button>#}
+{#                </form>#}
             </div>
           </div>
-          <!-- /.col-md-6 -->
         </div>
-        <!-- /.row -->
+
       </div><!-- /.container-fluid -->
     </div>
     <!-- /.content -->
@@ -103,5 +81,7 @@
 {% endblock %}
 
 {% block extra_js %}
-  <script src="{% static 'dist/js/like_button.js' %}" type="text/babel"></script>
+  <script src="{% static 'dist/js/registration_form.js' %}" type="text/babel"></script>
+{#  <script src="{% static 'dist/js/like_button.js' %}" type="text/babel"></script>#}
+
 {% endblock %}

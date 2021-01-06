@@ -35,7 +35,6 @@
                 </p>
                 <a href="#" class="card-link">Card link</a>
                 <a href="#" class="card-link">Another link</a>
-                <div id="like_button_container"></div>
                 <div id="like_button_container2"></div>
               </div>
             </div>
@@ -50,6 +49,7 @@
                   content.
                 </p>
                 <div id="registration_form"></div>
+
 {#                <form id="registration_form1" class="form" method="get" action="">#}
 {#                  {{ form.non_field_errors }}#}
 {#                  <div class="row">#}
@@ -70,18 +70,16 @@
 {#                  <button type="submit" class="btn btn-primary" name="action" value="search">Next</button>#}
 {#                  <button type="submit" class="btn btn-primary" name="action" value="search">Search</button>#}
 {#                </form>#}
+              </div>
             </div>
           </div>
-        </div>
 
-      </div><!-- /.container-fluid -->
+        </div>
+      </div>
     </div>
-    <!-- /.content -->
   </div>
 {% endblock %}
 
 {% block extra_js %}
   <script src="{% static 'dist/js/registration_form.js' %}" type="text/babel"></script>
-{#  <script src="{% static 'dist/js/like_button.js' %}" type="text/babel"></script>#}
-
 {% endblock %}

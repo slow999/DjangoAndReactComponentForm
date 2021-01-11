@@ -34,28 +34,8 @@
                   Some quick example text to build on the card title and make up the bulk of the card's
                   content.
                 </p>
+                {% csrf_token %}
                 <div id="registration_form"></div>
-
-{#                <form id="registration_form1" class="form" method="get" action="">#}
-{#                  {{ form.non_field_errors }}#}
-{#                  <div class="row">#}
-{#                    {% for each in form %}#}
-{#                      <div class="col-lg-3 col-md-3">#}
-{#                        <div class="form-group">#}
-{#                          <em class="text-red">{{ each.errors }}</em>#}
-{#                          <label for="{{ each.id_for_label }}">{{ each.label }}</label>#}
-{#                          {% if each.help_text %}#}
-{#                            <span style="border-bottom: 1px dotted black;" data-toggle="tooltip" data-placement="top"#}
-{#                                  title="{{ each.help_text }}">Help</span>#}
-{#                          {% endif %}#}
-{#                          {{ each }}#}
-{#                        </div>#}
-{#                      </div>#}
-{#                    {% endfor %}#}
-{#                  </div>#}
-{#                  <button type="submit" class="btn btn-primary" name="action" value="search">Next</button>#}
-{#                  <button type="submit" class="btn btn-primary" name="action" value="search">Search</button>#}
-{#                </form>#}
               </div>
             </div>
           </div>
@@ -67,5 +47,6 @@
 {% endblock %}
 
 {% block extra_js %}
+  <script src="{% static 'dist/js/csrftoken.js' %}" type="text/babel"></script>
   <script src="{% static 'dist/js/registration_form.js' %}" type="text/babel"></script>
 {% endblock %}

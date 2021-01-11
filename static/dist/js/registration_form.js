@@ -10,18 +10,19 @@ class MyForm extends React.Component {
 
   render() {
     return (
-      <form id="" class="form" method="get" action="">
+      <form id="" className="form" method="post" action="">
+        <CSRFToken />
         <div className="row">
           <div className="col-lg-3 col-md-3">
-            <div class="form-group">
-              <label for="id_first_name">First Name</label>
-              <input type="text" name="first_name" class="form-control" maxlength="32" required id="id_first_name" autocomplete="off"/>
+            <div className="form-group">
+              <label htmlFor="id_first_name">First Name</label>
+              <input type="text" name="first_name" className="form-control" maxLength="32" required id="id_first_name" autoComplete="off"/>
             </div>
           </div>
           <div className="col-lg-3 col-md-3">
             <div className="form-group">
-              <label htmlFor="id_first_name">First Name</label>
-              <input type="text" name="first_name" className="form-control" maxLength="32" required id="id_first_name"
+              <label htmlFor="id_last_name">Last Name</label>
+              <input type="text" name="last_name" className="form-control" maxLength="32" required id="id_last_name"
                      autoComplete="off"/>
             </div>
           </div>
@@ -45,7 +46,7 @@ class MyForm extends React.Component {
           </div>
         </div>
         <button type="submit" className="btn btn-primary" name="action" value="search">Next</button>
-        <button type="submit" className="btn btn-primary" name="action" value="search">Search</button>
+        <button type="submit" className="btn btn-primary" name="action" value="submit">Submit</button>
       </form>
     );
   }

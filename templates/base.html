@@ -252,11 +252,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <!-- AdminLTE App -->
 <script src="{% static 'dist/js/adminlte.min.js' %}"></script>
 <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
-<script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
-<script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+{#<script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>#}
+{#<script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>#}
 
+<script src="{% static 'dist/js/react/react.development.js' %}"></script>
+<script src="{% static 'dist/js/react/react-dom.development.js' %}"></script>
 <!-- JSX support-->
-<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+{#<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>#}
+<script src="{% static 'dist/js/react/babel.min.js' %}"></script>
 
 <!-- Load our React component. -->
 {% block extra_js %}{% endblock %}

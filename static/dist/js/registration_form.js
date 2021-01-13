@@ -45,7 +45,6 @@ class MyForm extends React.Component {
             </div>
           </div>
         </div>
-        <button type="submit" className="btn btn-primary" name="action" value="search">Next</button>
         <button type="submit" className="btn btn-primary" name="action" value="submit">Submit</button>
       </form>
     );

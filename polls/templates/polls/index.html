@@ -2,20 +2,6 @@
 {% load static %}
 
 {% block content_wrapper %}
-  {% if messages %}
-  {% for message in messages %}
-    {% if message.tags != 'error' %}
-    <div class="alert alert-{{ message.tags }} alert-dismissible">
-    {% else %}
-    <div class="alert alert-danger alert-dismissible">
-    {% endif %}
-      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-      <h4>{{ message.tags }}</h4>
-      <p>{{ message }}</p>
-    </div>
-  {% endfor %}
-  {% endif %}
-
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <div class="content-header">

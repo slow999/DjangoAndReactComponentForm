@@ -14,9 +14,9 @@ def index(request):
         if form.is_valid():
             cleaned_data = form.cleaned_data
             print(cleaned_data)
-            messages.success(request, 'Your data has been submitted')
+            print('Your data has been submitted')
         else:
-            messages.error(request, 'Something is wrong in form')
+            print('Something is wrong in form')
 
     return render(request, 'polls/index.html', context_dict)
 

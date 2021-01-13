@@ -1,6 +1,5 @@
 from django.shortcuts import render
 from polls.forms import RegistrationForm
-from django.contrib import messages
 
 
 def index(request):

@@ -12,13 +12,3 @@ class RegistrationForm(forms.Form):
         max_length=32,
         label='Last Name'
     )
-    length = forms.DecimalField(
-        widget=forms.NumberInput(attrs={'class': 'form-control'}),
-    )
-    width = forms.DecimalField(
-        widget=forms.NumberInput(attrs={'class': 'form-control'}),
-    )
-    height = forms.DecimalField(
-        widget=forms.NumberInput(attrs={'class': 'form-control'}),
-    )
-

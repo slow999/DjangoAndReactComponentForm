@@ -12,3 +12,8 @@ class RegistrationForm(forms.Form):
         max_length=32,
         label='Last Name'
     )
+    email = forms.EmailField(
+        widget=forms.TextInput(attrs={'class': 'form-control'}),
+        max_length=254,
+        label='Email'
+    )

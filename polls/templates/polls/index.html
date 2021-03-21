@@ -60,7 +60,6 @@
                 <p class="card-text">
                   Fill in neccessary info and submit.
                 </p>
-                {% csrf_token %}
                 <div id="registration_form"></div>
               </div>
             </div>
@@ -74,5 +73,5 @@
 
 {% block extra_js %}
   <script src="{% static 'dist/js/csrftoken.js' %}" type="text/babel"></script>
-  <script src="{% static 'dist/js/registration_form.js' %}" type="text/babel"></script>
+  <script src="{% static 'polls/registration_form.js' %}" type="text/babel"></script>
 {% endblock %}
